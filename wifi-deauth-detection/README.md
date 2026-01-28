@@ -1,49 +1,52 @@
-🛡️ WiFi Deauthentication Attack Detection System
+# 🛡️ WiFi Deauthentication Attack Detection System
 
-A Python-based cybersecurity application that detects WiFi Deauthentication (Deauth) attacks in real time using Scapy and dynamically informs the user via a GUI, enhanced with Gemini AI analysis for attack type and prevention techniques.
+A Python-based cybersecurity application that **detects WiFi Deauthentication (Deauth) attacks in real time** using **Scapy** and dynamically informs the user via a **GUI**, enhanced with **Gemini AI analysis** for attack type and prevention techniques.
 
-📌 Project Overview
+---
 
-WiFi Deauthentication attacks are commonly used to forcibly disconnect users from wireless networks. This project continuously monitors 802.11 management frames and detects deauth attacks in real time.
+## 📌 Project Overview
+
+WiFi Deauthentication attacks are commonly used to forcibly disconnect users from wireless networks. This project continuously monitors **802.11 management frames** and detects deauth attacks in real time.
 
 Once an attack is detected:
 
-The GUI updates dynamically
+* The GUI updates dynamically
+* Gemini AI analyzes the attack
+* User is informed about:
 
-Gemini AI analyzes the attack
+  * Attack type
+  * Risk level
+  * Explanation
+  * Prevention steps
 
-User is informed about:
+---
 
-Attack type
+## 🚀 Key Features
 
-Risk level
+* 🔍 Real-time WiFi Deauth attack detection
+* 📡 Uses **Scapy only** (no pywifi)
+* 🖥️ Python GUI with live updates (Tkinter)
+* 🧠 AI-powered analysis using **Google Gemini API**
+* 📝 Attack logging with timestamp
+* 🔐 Cybersecurity & academic project friendly
 
-Explanation
+---
 
-Prevention steps
+## 🧠 Technologies Used
 
-🚀 Key Features
+| Component       | Technology            |
+| --------------- | --------------------- |
+| Language        | Python 3              |
+| Packet Analysis | Scapy                 |
+| GUI             | Tkinter               |
+| AI              | Google Gemini API     |
+| OS              | Linux (Kali / Ubuntu) |
 
-🔍 Real-time WiFi Deauth attack detection
+---
 
-📡 Uses Scapy only (no pywifi)
+## 🗂️ Project Structure
 
-🖥️ Python GUI with live updates (Tkinter)
-
-🧠 AI-powered analysis using Google Gemini API
-
-📝 Attack logging with timestamp
-
-🔐 Cybersecurity & academic project friendly
-
-🧠 Technologies Used
-Component	Technology
-Language	Python 3
-Packet Analysis	Scapy
-GUI	Tkinter
-AI	Google Gemini API
-OS	Linux (Kali / Ubuntu)
-🗂️ Project Structure
+```
 wifi-deauth-detection/
 │
 ├── app.py               # Main application entry point
@@ -57,45 +60,66 @@ wifi-deauth-detection/
 ├── .env.example
 ├── README.md
 └── assets/
+```
 
-⚙️ System Requirements
+---
 
-Linux OS (Kali Linux recommended)
+## ⚙️ System Requirements
 
-Monitor mode supported WiFi adapter
+* Linux OS (Kali Linux recommended)
+* Monitor mode supported WiFi adapter
+* Python 3.8+
+* Root privileges
 
-Python 3.8+
+> ❗ Windows does **not** support monitor mode and raw 802.11 frame sniffing.
 
-Root privileges
+---
 
-❗ Windows does not support monitor mode and raw 802.11 frame sniffing.
+## 📥 Installation Steps
 
-📥 Installation Steps
-1️⃣ Enable Monitor Mode
+### 1️⃣ Enable Monitor Mode
+
+```bash
 sudo airmon-ng start wlan0
+```
 
-2️⃣ Clone Repository
-git clone 
+### 2️⃣ Clone Repository
+
+```bash
+git clone https://github.com/cyber-abhi01/Project/tree/main/secure-code-checker
 cd wifi-deauth-detection
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+
+```bash
 pip3 install -r requirements.txt
+```
 
-4️⃣ Configure Gemini API
+### 4️⃣ Configure Gemini API
 
-Rename .env.example to .env
+* Rename `.env.example` to `.env`
+* Add your API key:
 
-Add your API key:
-
+```env
 GEMINI_API_KEY=your_api_key_here
+```
 
-▶️ How to Run
+---
+
+## ▶️ How to Run
+
+```bash
 sudo python3 app.py
-
+```
 
 The GUI will start and begin monitoring WiFi deauthentication attacks.
 
-🧪 How It Works (Workflow)
+---
+
+## 🧪 How It Works (Workflow)
+
+```
 Monitor Mode Interface
         ↓
 Scapy Packet Sniffing
@@ -107,8 +131,13 @@ Send Data to Gemini AI
 Live GUI Update
         ↓
 Attack Log Saved
+```
 
-🖥️ Sample Output (GUI)
+---
+
+## 🖥️ Sample Output (GUI)
+
+```
 🚨 WiFi Deauthentication Attack Detected 🚨
 
 Attack Type:
@@ -124,37 +153,42 @@ Prevention:
 - Enable WPA3
 - Use 802.11w Management Frame Protection
 - Monitor abnormal deauth traffic
+```
 
-🔐 Security & Ethical Note
+---
 
-This tool is designed only for educational and defensive security purposes.
+## 🔐 Security & Ethical Note
+
+This tool is designed **only for educational and defensive security purposes**.
 Do not use it for unauthorized network monitoring.
 
-🎓 Academic Use
+---
+
+## 🎓 Academic Use
 
 Perfect for:
 
-Final Year Project
+* Final Year Project
+* Cyber Security Lab
+* Network Security Demonstration
+* Viva & Practical Exams
 
-Cyber Security Lab
+---
 
-Network Security Demonstration
+## 🔮 Future Enhancements
 
-Viva & Practical Exams
+* Attack rate thresholding
+* Multiple attacker detection
+* Graphical attack statistics
+* Windows demo (simulation mode)
+* Web-based dashboard
 
-🔮 Future Enhancements
+---
 
-Attack rate thresholding
+## 👨‍💻 Author
 
-Multiple attacker detection
-
-Graphical attack statistics
-
-Windows demo (simulation mode)
-
-Web-based dashboard
-
-👨‍💻 Author
-
-Abhishek 
+**Abhishek**
 Cybersecurity & Python Dev.
+
+---
+
