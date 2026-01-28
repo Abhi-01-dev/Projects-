@@ -24,7 +24,7 @@ Once an attack is detected:
 ## 🚀 Key Features
 
 * 🔍 Real-time WiFi Deauth attack detection
-* 📡 Uses **Scapy only** (no pywifi)
+* 📡 Uses **Scapy **
 * 🖥️ Python GUI with live updates (Tkinter)
 * 🧠 AI-powered analysis using **Google Gemini API**
 * 📝 Attack logging with timestamp
@@ -192,5 +192,6 @@ Perfect for:
 Cybersecurity & Python Dev.
 
 ---
+
 
 
