@@ -86,8 +86,8 @@ sudo airmon-ng start wlan0
 ### 2️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/cyber-abhi01/Project.git
-cd Project/wifi-deauth-detection
+git clone https://github.com/Abhi-01-dev/Projects-.git
+cd Projects-/wifi-deauth-detection
 
 ```
 
@@ -192,6 +192,7 @@ Perfect for:
 Cybersecurity & Python Dev.
 
 ---
+
 
 
 
