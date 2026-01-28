@@ -86,8 +86,9 @@ sudo airmon-ng start wlan0
 ### 2️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/cyber-abhi01/Project/tree/main/secure-code-checker
-cd wifi-deauth-detection
+git clone https://github.com/cyber-abhi01/Project.git
+cd Project/wifi-deauth-detection
+
 ```
 
 ### 3️⃣ Install Dependencies
@@ -191,4 +192,5 @@ Perfect for:
 Cybersecurity & Python Dev.
 
 ---
+
 
