@@ -16,10 +16,7 @@ and rewrites insecure code using secure coding practices.
 - Server: Uvicorn
 
 ## Installation
-1. Clone the repo
 ```bash
-git clone https://github.com/cyber-abhi01/Project.git
-cd Project/secure-code-checker
 Install dependencies
 
 pip install -r requirements.txt
@@ -29,4 +26,5 @@ cp .env.example .env
 Run server
 
 python -m uvicorn app:app --reload
+
 Open browser at http://127.0.0.1:8000
