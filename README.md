@@ -2,7 +2,7 @@
 
 
 Hi 👋
-I’m **Abhishek**, a cybersecurity enthusiast and Python developer.
+I’m **Abhishek Sharma**, a cybersecurity enthusiast and Python developer.
 I use this repository to upload my **learning-based, practical, and security-focused projects**.
 
 ---
